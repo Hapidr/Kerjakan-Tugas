@@ -1,2 +1,2 @@
 # Kerjakan-Tugas
-Ngerjakan tugas orang di internet
+Ngerjakan tugas random di internet
