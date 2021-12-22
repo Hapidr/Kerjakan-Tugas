@@ -1,12 +1,21 @@
-def tabung(r = int(input("Masukkan Jari-Jari alas Tabung: ")), t = int(input("Masukkan Tinggi Tabung: "))):
-    print("Volume Tabung adalah " + str(3.14 * (r**2) * t))
-tabung()
+def volume_tabung(jari_jari, tinggi):
+    print(f"Jari-jari tabung {jari_jari}, tinggi {tinggi}".title())
+    if jari_jari % 7 == 0:
+        return (22/7) * (jari_jari**2) * tinggi
+    else:
+        return 3.14 * (jari_jari**2) * tinggi
 
-def kerucut(r = int(input("Masukkan Jari-Jari alas Kerucut: ")), t = int(input("Masukkan Tinggi Kerucut: "))):
-    print("Volume Kerucut adalah " + str((1/3) * 3.14 * (r**2) * t))
-kerucut()
+def volume_kerucut(jari_jari, tinggi):
+    print(f"Jari-jari kerucut {jari_jari}, tinggi {tinggi}".title())
+    if jari_jari % 7 == 0:
+        return (1/3) * ((22/7) * (jari_jari**2) * tinggi)
+    else:
+        return (1/3) * ((22/7) * (jari_jari**2) * tinggi)
 
-def kubus(r = int(input("Masukkan rusuk Kubus: "))):
-    print("Volume Kubus adalah " + str(r*r*r))
+def volume_kubus(rusuk):
+    print(f"Rusuk kerucut {rusuk}".title())
+    return rusuk**3
 
-kubus()
+print(volume_tabung(8, 10))
+print(volume_kerucut(7, 10))
+print(volume_kubus(7))
