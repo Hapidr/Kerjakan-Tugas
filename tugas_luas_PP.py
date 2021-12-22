@@ -3,7 +3,7 @@ def getPanjangLebar():
     panjang = float(input("Masukkan nilai: "))
     lebar = float(input("Masukkan nilai: "))
 
-    print(f"======REKAP INPUTAN======\nPanjang : {panjang}\nLebar : {lebar}")
+    print(f"======REKAP INPUTAN======\nPanjang : {panjang}cm\nLebar : {lebar}cm")
 
     hitungLuasPP(panjang, lebar)
     tampilLuasPP(hitungLuasPP(panjang, lebar))
