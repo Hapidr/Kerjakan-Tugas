@@ -16,6 +16,6 @@ def volume_kubus(rusuk = 7):
     print(f"Rusuk kerucut {rusuk}".title())
     return rusuk**3
 
-print(volume_tabung())
-print(volume_kerucut())
+print(f"{volume_tabung():.2f}")
+print(f"{volume_kerucut():.2f}")
 print(volume_kubus())
