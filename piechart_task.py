@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv('D:\Downloads\Data.csv')
+df = pd.read_csv('D:\Downloads\Data.csv') # Path of your CSV file
 new_df = df.groupby('Country').sum()
 # print(df)
 print(new_df)
