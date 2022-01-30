@@ -16,6 +16,8 @@ vi = pd.DataFrame({
 vi.index = [1,2,3,4,5]
 print("="*20)
 print(vi)
+print("="*20)
+
 '''
 DONE
 '''
