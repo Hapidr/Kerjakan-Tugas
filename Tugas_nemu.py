@@ -13,7 +13,12 @@ def validasi(angka):
     else:
         print("Masukkan Angka yang benar!")
 
-print("1. Bisa hadir Offline \n2. Jaringan Bagus \n3. Tidak bisa hadir Offline dan Jaringan tidak bagus \n")
+print("""
+1. Bisa hadir Offline 
+2. Jaringan Bagus 
+3. Tidak bisa hadir Offline dan Jaringan tidak bagus """)
 angka = input("Masukkan Angka: ")
-
-validasi(int(angka))
+try:
+    validasi(int(angka))
+except:
+    print("Masukkan Angka yang benar!")
